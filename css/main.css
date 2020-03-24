@@ -449,12 +449,14 @@ button:focus {
 	margin-bottom: 33px;
 }
 
+.price-list,
 .widget {
 	background: #004B89;
 	box-shadow: 0px 4px 4px rgba(0, 75, 137, 0.25);
 	border-radius: 5px;
 }
 
+.price-list__name,
 .widget__link {
 	color: #FFFDFD;
 	padding: 13.5px 9px 13.5px 16px;
@@ -464,6 +466,7 @@ button:focus {
 	justify-content: space-between;
 }
 
+.price-list__name:hover,
 .widget__link:hover {
 	background: #007bffbf;
 }
@@ -472,25 +475,33 @@ button:focus {
 	display: block;
 }
 
-.widget__list:last-child {
+.price-list__list:first-child .price-list__drop {
+	display: block;
+}
+
+.price-list__list:last-child .widget__list:last-child {
 	padding-bottom: 15px;
 }
 
+.fa-down_two,
 .fa-down {
 	color: rgba(255, 253, 253, 0.5);
 	font-size: 15px;
 	transition: .3s;
 }
 
+.fa-down_two.activ,
 .fa-down.activ {
 	transform: rotate(-180deg);
 	transition: .3s;
 }
 
+.price-list a:not([href]):not([tabindex]),
 .widget a:not([href]):not([tabindex]) {
 	color: #FFFDFD;
 }
 
+.price-list__drop,
 .widget__drop {
 	background: #FFFDFD;
 	padding: 10px 0 8px;
@@ -501,7 +512,7 @@ button:focus {
 /* .widget__drop_active {
 	display: block !important;
 } */
-
+.price-list__drop li a,
 .widget__drop li a {
 	color: #004B89;
 	position: relative;
@@ -510,6 +521,7 @@ button:focus {
 	font-weight: 400;
 }
 
+.price-list__drop li a:before,
 .widget__drop li a:before {
 	content: ' ';
 	position: absolute;
@@ -521,10 +533,12 @@ button:focus {
 	left: 0;
 }
 
+.price-list__drop li,
 .widget__drop li {
 	padding: 0 10px;
 }
 
+.price-list__drop li:hover,
 .widget__drop li:hover {
 	background: #007bff30;
 }
@@ -815,12 +829,17 @@ button:focus {
 }
 
 /*-- PAGE page-product --*/
+.page {
+	padding: 70px 0 15px;
+}
+
+/* .certifications,
 .page-contacts,
 .page-pay-deliv,
 .page-product,
 .articles {
 	padding: 70px 0 15px;
-}
+} */
 
 .product-features {
 	padding-top: 10px;
@@ -874,13 +893,13 @@ button:focus {
 	color: #004B89;
 }
 
-.product-features-text {
+/* .product-features-text {
 	padding-top: 9px;
 }
 
 .product-features-text p {
 	margin-bottom: 15px;
-}
+} */
 
 /*-- contact-form --*/
 .contacts-form {
@@ -1015,7 +1034,7 @@ input[type=checkbox]:checked:disabled+label:before {
 	border-color: #bfb;
 }
 
-#map {
+#map iframe {
 	width: 100%;
 	height: 600px;
 }
@@ -1103,9 +1122,9 @@ input[type=checkbox]:checked:disabled+label:before {
 	margin-top: 37px;
 }
 
-.product-features-specific__tabs-content p {
+/* .product-features-specific__tabs-content p {
 	margin-bottom: 15px;
-}
+} */
 
 .tabcontent__list {
 	margin-top: 25px;
@@ -1219,9 +1238,9 @@ input[type=checkbox]:checked:disabled+label:before {
 }
 
 /*-- page-services --*/
-.page-services {
+/* .page-services {
 	padding-bottom: 0;
-}
+} */
 
 .page-services .product-features img {
 	height: 266px;
@@ -1282,11 +1301,11 @@ input[type=checkbox]:checked:disabled+label:before {
 	margin-bottom: 25px;
 }
 
-.page-pay-deliv .tabcontent p a {
+.page-pay-deliv .text p a {
 	color: #1B1B1F;
 }
 
-.page-pay-deliv .tabcontent p a:hover {
+.page-pay-deliv .text p a:hover {
 	color: #004B89;
 }
 
@@ -1298,11 +1317,11 @@ input[type=checkbox]:checked:disabled+label:before {
 }
 
 .download-file:hover {
-	color: #1B1B1F;
+	color: #F7A619;
 }
 
 .download-file .icon-file {
-	background: #004B89;
+	background: #F7A619;
 	box-shadow: 0px 4px 4px rgba(0, 75, 137, 0.25);
 	border-radius: 5px;
 	padding: 8px;
@@ -1320,11 +1339,6 @@ input[type=checkbox]:checked:disabled+label:before {
 }
 
 /*-- contacts --*/
-.contacts li h3 {
-	color: #004B89;
-	margin-bottom: 15px;
-}
-
 .contacts li {
 	margin-bottom: 20px;
 	flex-direction: column;
@@ -1349,13 +1363,150 @@ input[type=checkbox]:checked:disabled+label:before {
 }
 
 /*-- articles --*/
-.articles .product-features__text p {
-	margin-bottom: 20px;
+.text h3 {
+	color: #004B89;
 }
 
-.articles
+.text h3,
+.text p {
+	margin-bottom: 17px;
+}
 
-/*-- page-services --*/
+.table-specific {
+	margin-top: 30px;
+}
+
+.table-specific tr th,
+.table-specific tr td {
+	width: 215px;
+	text-align: center;
+	padding: 25px 0 20px;
+	border: 1px solid #004B89;
+	font-weight: 700;
+	color: #004B89;
+}
+
+.table-specific tr th {
+	background: #004B89;
+	color: #FFFDFD;
+	border-right: 1px solid #FFFDFD;
+}
+
+/*-- certifications --*/
+.certifications-content {
+	flex-flow: wrap;
+	display: flex;
+	margin-top: 35px;
+
+}
+
+.certifications-item {
+	width: 31%;
+	margin-bottom: 30px;
+}
+
+.certifications-item h3 {
+	color: #004B89;
+	margin-bottom: 30px;
+}
+
+.certifications-item:nth-child(3n + 2) {
+	margin: 0 2% 3%;
+}
+
+.wrap-img-overlay {
+	position: relative;
+}
+
+.wrap-img-overlay:hover .certifications-item__overlay {
+	display: block;
+}
+
+.certifications-item__overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 75, 137, 0.5);
+	top: 0;
+	left: 0;
+	display: none;
+	cursor: pointer;
+}
+
+.fa-search-plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 27px;
+}
+
+/*-- download gost --*/
+.gost-download a:before {
+	content: '⤓';
+	position: absolute;
+	font-size: 25px;
+	font-weight: 700;
+	left: -20px;
+	top: -10px;
+	color: #004B89;
+}
+
+.gost-download a {
+	margin-left: 20px;
+	position: relative;
+	color: #1B1B1F;
+	display: block;
+	margin-bottom: 23px;
+}
+
+.gost-download a:hover {
+	color: #004B89;
+}
+
+/*-- price-list --*/
+.price-list__drop {
+	padding: 0;
+}
+
+.price-list__drop thead tr th {
+	color: #004B89;
+	font-weight: 400;
+}
+
+.price-list__drop thead tr th:first-child {
+	width: 80%;
+}
+
+.price-list__drop thead tr th:last-child {
+	width: 185px;
+}
+
+.price-list__drop td,
+.price-list__drop th {
+	padding: 15px 0 15px 30px;
+	border: 1px solid #004B89;
+}
+
+.price-list__drop tbody tr td:last-child {
+	color: #004B89;
+	font-weight: 700;
+}
+
+.price-list__drop tbody tr:hover {
+	background: rgba(0, 75, 137, 0.7);
+	color: #FFFDFD;
+}
+
+.price-list__drop tbody tr:hover td:last-child {
+	color: #FFFDFD;
+
+}
+
+/*-- certifications --*/
+/*-- certifications --*/
+/*-- certifications --*/
+/*-- certifications --*/
 /*-- MEDIA QUERIES --*/
 /*-- 992-1200px col-lg --*/
 @media screen and (max-width: 1200px) {}

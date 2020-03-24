@@ -16,6 +16,24 @@ $(document).ready(function () {
     });
 });
 
+// section price-list widget dropdown DROPDOWN
+$(document).ready(function () {
+    $('.price-list__name').click(function () {
+        $('.price-list__name').not(this).children('.fa-down_two').removeClass('activ');
+        $(this).children('.fa-down_two').toggleClass("activ");
+
+        if ($(this).parent().is('.fa_down_two')) {
+            $(this).closest('.price-list__list').find('.price-list__drop').slideUp();
+            $(this).closest('.price-list__list').removeClass('fa_down_two');
+        } else {
+            $('.price-list__drop').slideUp();
+            $('.price-list__list').removeClass('fa_down_two');
+            $(this).closest('.price-list__list').find('.price-list__drop').slideDown();
+            $(this).closest('.price-list__list').addClass('fa_down_two');
+        }
+    });
+});
+
 // gallery product 
 $(".gallery-content > div").on('click', 'img', function () {
     let src = $(this).attr("src");
