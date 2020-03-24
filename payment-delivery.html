@@ -10,7 +10,6 @@
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<!-- FONT FAMILY Noto Sans 400 500 -->
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Main CSS -->
@@ -566,14 +565,14 @@
 									<p class="form__subtitle">
 										Наш специалист ответит на все Ваши вопросы
 									</p>
-									<input type="text" placeholder="Имя">
-									<input type="text" placeholder="Телефон">
-									<input type="text" placeholder="Email">
+									<input type="text" placeholder="Имя" required>
+									<input type="text" placeholder="Телефон required">
+									<input type="text" placeholder="Email" required>
 									<textarea name="text" placeholder="Комментарий"></textarea>
 									<button type="submit" class="form__btn btn">
 										Отправить
 									</button>
-									<input type="checkbox" required id="input-check" name="input-check">
+									<input type="checkbox" required id="input-check" name="input-check" required>
 									<label for="input-check">Я ознакомлен и согласен с
 										пользовательским
 										соглашением</label>
@@ -639,7 +638,6 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/slider-portfolio.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

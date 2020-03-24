@@ -58,6 +58,6 @@ function autoSlider() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(autoSlider, 7000);
+    setTimeout(autoSlider, 6000);
 }
 autoSlider();

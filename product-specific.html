@@ -10,7 +10,8 @@
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<!-- FONT FAMILY Noto Sans 400 500 -->
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="css/slick.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Main CSS -->
@@ -493,39 +494,40 @@
 								</ul>
 							</div>
 							<div id="tabFeature" class="tabcontent">
-								<ul class="product-features__list">
-									<li>
-										Производительность
-										<span>
-											до 15 биг-бэг/час
-										</span>
-									</li>
-									<li>
-										Мощность
-										<span>
-											0,55 кВт
-										</span>
-									</li>
-									<li>
-										Напряжение
-										<span>
-											42;220;380 В
-										</span>
-									</li>
-									<li>
-										Габаритные размеры
-										<span>
-											1750х1760х2250
-										</span>
-									</li>
-									<li>
-										Масса растариваемого контейнера
-										<span>
-											до 2 тн
-										</span>
-									</li>
-								</ul>
-								<img src="img/characteristic-product1.png" alt="Изображение">
+								<table class="table-specific table-specific_descr">
+									<thead>
+										<tr>
+											<th>Наименование</th>
+											<th>Значение</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Производительность</td>
+											<td>до 15 биг-бэг/час</td>
+										</tr>
+										<tr>
+											<td>Мощность</td>
+											<td>0,55 кВт</td>
+										</tr>
+										<tr>
+											<td>Напряжение</td>
+											<td>42;220;380 В</td>
+										</tr>
+										<tr>
+											<td>Габаритные размеры</td>
+											<td>1750х1760х2250</td>
+										</tr>
+										<tr>
+											<td>Масса растариваемого контейнера</td>
+											<td>до 2 тн</td>
+										</tr>
+										<tr>
+											<td>Обслуживание</td>
+											<td>1 человек</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -533,24 +535,31 @@
 						<h2>
 							Выполненные проекты
 						</h2>
-						<div class="portfolio-slider">
-							<div class="portfolio-slider__wrapper d-flex">
-								<div class="portfolio-slider__item">
-									<div style="height: 250px;"><img src="img/portfolio1.jpg" alt="Изображение"></div>
-								</div>
-								<div class="portfolio-slider__item">
-									<div style="height: 250px;"><img src="img/portfolio2.jpg" alt="Изображение"></div>
-								</div>
-								<div class="portfolio-slider__item">
-									<div style="height: 250px;"><img src="img/portfolio3.jpg" alt="Изображение"></div>
-								</div>
-								<div class="portfolio-slider__item">
-									<div style="height: 250px;"><img src="img/portfolio1.jpg" alt="Изображение"></div>
-								</div>
+						<div class="slider slider-portfolio">
+							<div class="slider__slide">
+								<img src="img/portfolio1.jpg" alt="Изображение">
 							</div>
-							<a class="portfolio-slider__control portfolio-slider__control_left" role="button"></a>
-							<a class="portfolio-slider__control portfolio-slider__control_right portfolio-slider__control_show"
-								role="button"></a>
+							<div class="slider__slide">
+								<img src="img/portfolio2.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio1.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio2.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio1.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio2.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio1.jpg" alt="Изображение">
+							</div>
+							<div class="slider__slide">
+								<img src="img/portfolio2.jpg" alt="Изображение">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -598,14 +607,14 @@
 									<p class="form__subtitle">
 										Наш специалист ответит на все Ваши вопросы
 									</p>
-									<input type="text" placeholder="Имя">
-									<input type="text" placeholder="Телефон">
-									<input type="text" placeholder="Email">
+									<input type="text" placeholder="Имя" required>
+									<input type="text" placeholder="Телефон" required>
+									<input type="text" placeholder="Email" required>
 									<textarea name="text" placeholder="Комментарий"></textarea>
 									<button type="submit" class="form__btn btn">
 										Отправить
 									</button>
-									<input type="checkbox" required id="input-check" name="input-check">
+									<input type="checkbox" required id="input-check" name="input-check" required>
 									<label for="input-check">Я ознакомлен и согласен с
 										пользовательским
 										соглашением</label>
@@ -671,7 +680,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/slider-portfolio.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
