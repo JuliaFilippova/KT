@@ -139,9 +139,6 @@ let certif = document.querySelectorAll('.wrap-img-overlay').forEach(item => item
 
 function cert() {
     let image = this.children[0].src;
-    // let imgOverlay = this.children[0]
-    // $(imgOverlay).addClass('overlay-img');
-    // console.log(imgOverlay);
     overlay(image, 40);
 }
 
@@ -163,7 +160,7 @@ function overlay(src, width) {
         document.body.style.overflow = 'auto';
     }
 }
-document.querySelector('.nav-menu__btn').addEventListener('click', () => {
+document.querySelectorAll('.nav-menu__btn').addEventListener('click', () => {
     let overlay = document.createElement('div');
     let modalForm = document.querySelector('.modal-form');
     modalForm.style.display = 'block';
@@ -192,7 +189,6 @@ function burgerMenu(selector) {
     });
 
     links.on('click', () => toggleMenu());
-    // overlay.on('click', () => toggleMenu());
 
     function toggleMenu() {
         menu.toggleClass('burger-menu__active');
