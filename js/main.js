@@ -139,7 +139,7 @@ let certif = document.querySelectorAll('.wrap-img-overlay').forEach(item => item
 
 function cert() {
     let image = this.children[0].src;
-    overlay(image, 40);
+    overlay(image, 35);
 }
 
 let sliderImg = document.querySelectorAll('.slider__slide').forEach(item => item.onclick = sliderImage);
