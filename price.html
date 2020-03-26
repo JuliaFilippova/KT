@@ -20,86 +20,151 @@
 	<header class="header" id="header">
 		<div class="nav-bar">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-3">
-						<a href="index.html" class="nav-bar__brand">
-							<img src="img/logo.png" alt="Логотип Компании">
-						</a>
-					</div>
-					<div class="col-lg-3">
-						<div class="nav-bar__search">
-							<input type="text" placeholder="Поиск...">
-							<i class="fas fa-search search-btn" title="Найти.."></i>
+				<div class="menu-desctop">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<a href="index.html" class="nav-bar__brand">
+								<img src="img/logo.png" alt="Логотип Компании">
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<div class="nav-bar__search">
+								<input type="text" placeholder="Поиск...">
+								<i class="fas fa-search search-btn" title="Найти.."><input type="submit"
+										title="Найти.."></i>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<i class="far fa-envelope"></i>
+							<a href="mailto:info@stroytp.ru" class="nav-bar__email email" title="Написать">
+								info@stroytp.ru
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="tel:+74872717098" class="nav-bar__phone phone" title="Позвонить">
+								<i class="fas fa-phone"></i>
+								+7 (4872) 71-70-98
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="tel:+79101671601" class="nav-bar__phone phone" title="Позвонить">
+								<i class="fas fa-phone"></i>
+								+7 (910) 167-16-01
+							</a>
 						</div>
 					</div>
-					<div class="col-lg-2">
-						<i class="far fa-envelope"></i>
-						<a href="mailto:info@stroytp.ru" class="nav-bar__email email" title="Написать">
-							info@stroytp.ru
-						</a>
-					</div>
-					<div class="col-lg-2">
-						<a href="tel:+74872717098" class="nav-bar__phone phone" title="Позвонить">
-							<i class="fas fa-phone"></i>
-							+7 (4872) 71-70-98
-						</a>
-					</div>
-					<div class="col-lg-2">
-						<a href="tel:+79101671601" class="nav-bar__phone phone" title="Позвонить">
-							<i class="fas fa-phone"></i>
-							+7 (910) 167-16-01
-						</a>
+				</div>
+				<div class="menu-mobile">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-4">
+							<a href="index.html" class="nav-bar__brand">
+								<img src="img/logo.png" alt="Логотип Компании">
+							</a>
+						</div>
+						<div class="col-3 d-none d-sm-block">
+							<a href="mailto:info@stroytp.ru" class="nav-bar__email email" title="Написать">
+								<i class="far fa-envelope"></i>
+								info@stroytp.ru
+							</a>
+						</div>
+						<div class="col-3 d-none d-sm-block">
+							<a href="tel:+74872717098" class="nav-bar__phone phone" title="Позвонить">
+								<i class="fas fa-phone"></i>
+								+7 (4872) 71-70-98
+							</a>
+							<a href="tel:+79101671601" class="nav-bar__phone phone" title="Позвонить">
+								<i class="fas fa-phone"></i>
+								+7 (910) 167-16-01
+							</a>
+						</div>
+						<div class="col-auto">
+							<a href="#" class="nav-menu__btn nav-menu__btn_icon btn">
+								<i class="fas fa-phone"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="nav-menu">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-8">
-						<nav>
-							<ul class="nav-menu__list d-flex align-items-center">
-								<li>
-									<a href="index.html">
-										Главная
-									</a>
-								</li>
-								<li>
-									<a href="services.html">
-										Услуги
-									</a>
-								</li>
-								<li>
-									<a href="price.html" class="link-active">
-										Прайс-лист
-									</a>
-								</li>
-								<li>
-									<a href="download-gost.html">
-										Госты
-									</a>
-								</li>
-								<li>
-									<a href="articles.html">
-										Статьи
-									</a>
-								</li>
-								<li>
-									<a href="contacts.html">
-										Контакты
-									</a>
-								</li>
-							</ul>
-						</nav>
+				<div class="menu-desctop">
+					<div class="row">
+						<div class="col-lg-8">
+							<nav>
+								<ul class="nav-menu__list d-flex align-items-center">
+									<li>
+										<a href="index.html">
+											Главная
+										</a>
+									</li>
+									<li>
+										<a href="services.html">
+											Услуги
+										</a>
+									</li>
+									<li>
+										<a href="price.html" class="link-active">
+											Прайс-лист
+										</a>
+									</li>
+									<li>
+										<a href="download-gost.html">
+											Госты
+										</a>
+									</li>
+									<li>
+										<a href="articles.html">
+											Статьи
+										</a>
+									</li>
+									<li>
+										<a href="contacts.html">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg-4">
+							<div class="nav-menu__box d-flex">
+								<a href="payment-delivery.html" class="nav-menu__link">
+									Оплата и доставка
+								</a>
+								<a href="#" class="nav-menu__btn btn">
+									Заказать звонок
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="nav-menu__box d-flex">
-							<a href="payment-delivery.html" class="nav-menu__link">
-								Оплата и доставка
-							</a>
-							<a href="#" class="nav-menu__btn btn">
-								Заказать звонок
-							</a>
+				</div>
+				<div class="menu-mobile">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<div class="burger-menu">
+								<a href="#" class="burger-menu__btn">
+									<span class="burger-menu__lines"></span>
+								</a>
+								<ul class="burger-menu__nav">
+									<li><a href="index.html" class="burger-menu__link">Главная</a></li>
+									<li><a href="services.html" class="burger-menu__link">Услуги</a></li>
+									<li><a href="price.html" class="burger-menu__link">Прайс-лист</a></li>
+									<li><a href="payment-delivery.html" class="burger-menu__link">Оплата и доставка</a>
+									</li>
+									<li><a href="download-gost.html" class="burger-menu__link">ГОСТЫ</a></li>
+									<li><a href="articles.html" class="burger-menu__link">Статьи</a></li>
+									<li><a href="news.html" class="burger-menu__link">Новости</a></li>
+									<li><a href="sertificat.html" class="burger-menu__link">Сертификаты</a></li>
+									<li><a href="contacts.html" class="burger-menu__link">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-8">
+							<div class="nav-bar__search">
+								<input type="text" placeholder="Поиск...">
+								<i class="fas fa-search search-btn" title="Найти.."><input type="submit"
+										title="Найти.."></i>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -337,7 +402,7 @@
 									</p>
 								</div>
 							</div>
-							<a href="#" class="news__more more-link" title="Узнать больше">
+							<a href="news.html" class="news__more more-link" title="Узнать больше">
 								Все новости
 								<i class="fas fa-chevron-down"></i>
 							</a>
@@ -348,7 +413,7 @@
 							Сертификаты <br> на оборудование
 						</h3>
 						<img src="img/sertificat1.png" alt="Изображение">
-						<a href="#" class="certificate__more more-link" title=" Узнать больше">
+						<a href="sertificat.html" class="certificate__more more-link" title=" Узнать больше">
 							Все сертификаты
 							<i class="fas fa-chevron-down"></i>
 						</a>
@@ -361,8 +426,8 @@
 					</h2>
 					<ul class="price-list">
 						<li class="price-list__list">
-							<a class="fa_down_two price-list__name">
-								Мини-заводы (под ключ)
+							<a class="price-list__name">
+								<span>Мини-заводы (под ключ)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<table class="price-list__drop">
@@ -374,36 +439,40 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в смену
+										<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+											огребневых
+											плит), 500-800 блоков в смену
 											(8 часов), размеры 667х500х80/100
 										</td>
-										<td>2 800 000 ₽</td>
+										<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 									</tr>
 									<tr>
-										<td>Мини-завод по производству СМЛ листов (стекломагниевых листов), 500-1000
+										<td data-label="Наименование:"> <br> Мини-завод по производству СМЛ листов
+											(стекломагниевых листов), 500-1000
 											листов в смену (8 часов), размеры 2440х1220х8</td>
-										<td>от 7 500 000 ₽</td>
+										<td data-label="Цена:"> <br> от 7 500 000 ₽</td>
 									</tr>
 									<tr>
-										<td>Мини-завод по изготовлению сухих смесей на основе цемента, гипса и других
+										<td data-label="Наименование:"> <br> Мини-завод по изготовлению сухих смесей на
+											основе цемента, гипса и других
 											материалов</td>
-										<td>от 1 500 000 ₽</td>
+										<td data-label="Цена:"> <br> от 1 500 000 ₽</td>
 									</tr>
 									<tr>
-										<td>Мусороперерабатывающий завод</td>
-										<td>от 3 000 000 ₽</td>
+										<td data-label="Наименование:"> <br> Мусороперерабатывающий завод</td>
+										<td data-label="Цена:"> <br> от 3 000 000 ₽</td>
 									</tr>
 									<tr>
-										<td>Линия подготовки и фасовки грунта (торфогрунта)</td>
-										<td>от 500 000 ₽</td>
+										<td data-label="Наименование:"> <br> Линия подготовки и фасовки грунта
+											(торфогрунта)</td>
+										<td data-label="Цена:"> <br> от 500 000 ₽</td>
 									</tr>
 								</tbody>
 							</table>
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Мини-завод по производству СМЛ листов (стекломагниевых листов), 500-1000 листов в смену
-								(8 часов), размеры 2440х1220х8
+								<span>Винтовые конвейеры ВК (шнековые транспортеры)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -416,11 +485,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -428,7 +498,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Винтовые конвейеры ВК (шнековые транспортеры)
+								<span>Ленточные конвейеры ЛК (ленточные транспортеры)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -441,11 +511,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -453,7 +524,8 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Ленточные конвейеры ЛК (ленточные транспортеры)
+								<span>Оборудование для работы с мягкими контейнерами типа "биг-бэг" (растариватели
+									биг-бегов)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -466,11 +538,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -478,7 +551,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Оборудование для работы с мягкими контейнерами типа "биг-бэг" (растариватели биг-бегов)
+								<span>Дозаторы жидкостей (воды) и энертных (сыпучих) материалов</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -491,11 +564,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -503,7 +577,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Дозаторы жидкостей (воды) и энертных (сыпучих) материалов
+								<span>Гидравлические пресса с виброуплотнением</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -516,11 +590,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -528,7 +603,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Гидравлические пресса с виброуплотнением
+								<span>Смесители принудительного действия "Классик" (бетоносмесители)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -541,11 +616,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -553,7 +629,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Смесители принудительного действия "Классик" (бетоносмесители)
+								<span>Гидравлические пресса с виброуплотнением</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -566,11 +642,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -578,7 +655,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Гидравлические пресса с виброуплотнением
+								<span>Смесители принудительного действия "Классик" (бетоносмесители)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -591,11 +668,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -603,7 +681,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Смесители принудительного действия "Классик" (бетоносмесители)
+								<span>Смесители турбулентного действия</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -616,11 +694,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -628,7 +707,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Смесители турбулентного действия
+								<span>Вибростолы серии "ВС"</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -641,11 +720,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -653,7 +733,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Вибростолы серии "ВС"
+								<span>Вибросито</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -666,11 +746,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -678,7 +759,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Вибросито
+								<span>Барабанное сито</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -691,11 +772,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -703,7 +785,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Барабанное сито
+								<span>Виброформы колодезного кольца (КС)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -716,11 +798,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -728,7 +811,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Виброформы колодезного кольца (КС)
+								<span>Формы крышки (днища) колодезного кольца (ПК)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -741,11 +824,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -753,7 +837,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы крышки (днища) колодезного кольца (ПК)
+								<span>Поддоны для виброформ КС (технологические)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -766,11 +850,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -778,7 +863,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Поддоны для виброформ КС (технологические)
+								<span>Пустотообразователи для форм КС</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -791,11 +876,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -803,7 +889,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Пустотообразователи для форм КС
+								<span>Формы ЖБИ другие</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -816,11 +902,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -828,7 +915,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы ЖБИ другие
+								<span>Формы ФБС (Формы блоков стен подвалов)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -841,11 +928,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -853,7 +941,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы ФБС (Формы блоков стен подвалов)
+								<span>Формы высокоточные для пенобетона и газобетона</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -866,11 +954,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -878,7 +967,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы высокоточные для пенобетона и газобетона
+								<span>Формы для производства пазогребневых плит (ПГП), 4-сторонние</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -891,11 +980,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -903,7 +993,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы для производства пазогребневых плит (ПГП), 4-сторонние
+								<span>Формы для производства газобетона</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -916,11 +1006,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -928,7 +1019,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы для производства газобетона
+								<span>Формы ЖБИ</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -941,11 +1032,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -953,7 +1045,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы ЖБИ
+								<span>Формы бетонных цветочниц (металлические)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -966,11 +1058,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -978,7 +1071,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы бетонных цветочниц (металлические)
+								<span>Формы бетонных цветочниц (металлические)</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -991,11 +1084,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1003,7 +1097,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Формы бетонных цветочниц (металлические)
+								<span>Лотки межшпальные</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -1016,11 +1110,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1028,7 +1123,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Лотки межшпальные
+								<span>Лотки телескопические</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -1041,11 +1136,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1053,7 +1149,7 @@
 						</li>
 						<li class="price-list__list">
 							<a class="price-list__name">
-								Лотки телескопические
+								<span>Формы для производства плит перекрытия камер ВП</span>
 								<i class="fas fa-chevron-down fa-down_two"></i>
 							</a>
 							<div class="price-list__drop">
@@ -1066,36 +1162,12 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
+											<td data-label="Наименование:"> <br> Мини-завод по производству ПГП (паз
+												огребневых плит), 500-800 блоков в
 												смену
 												(8 часов), размеры 667х500х80/100
 											</td>
-											<td>2 800 000 ₽</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</li>
-						<li class="price-list__list">
-							<a class="price-list__name">
-								Формы для производства плит перекрытия камер ВП
-								<i class="fas fa-chevron-down fa-down_two"></i>
-							</a>
-							<div class="price-list__drop">
-								<table>
-									<thead>
-										<tr>
-											<th>Наименование</th>
-											<th>Цена</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Мини-завод по производству ПГП (паз огребневых плит), 500-800 блоков в
-												смену
-												(8 часов), размеры 667х500х80/100
-											</td>
-											<td>2 800 000 ₽</td>
+											<td data-label="Цена:"> <br> 2 800 000 ₽</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1108,8 +1180,8 @@
 	</section>
 	<footer class="footer" id="footer">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-auto">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-12 col-md-2">
 					<div class="footer-box">
 						<a href="index.html" class="footer-brand" title="На главную">
 							<img src="img/footer-logo.png" alt="Логотип Компании">
@@ -1119,31 +1191,34 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-10">
+				<div class="col-xl-10 col-md-9 col-12">
 					<div class="footer-box d-flex">
-						<a href="https://yandex.ru/maps/?um=constructor%3A94c667e9f9a7491b7af56305b59ab9cece2fef84c90ebc2a3e7cde3de74a0cff&source=constructorLink"
-							class="footer-address footer-contact" title="Посмотреть на Яндекс карте">
-							<i class="fas fa-map-marker-alt"></i>
-							Тульская область, Ленинский район, <br> с. Архангельское, ул. Центральная 1а
-						</a>
-						<div class="footer-email footer-contact">
-							<i class="far fa-envelope"></i>
-							<a href="mailto:info@stroytp.ru" class="email" title="Написать">
-								info@stroytp.ru
+						<div class="box-flex">
+							<a href="https://yandex.ru/maps/?um=constructor%3A94c667e9f9a7491b7af56305b59ab9cece2fef84c90ebc2a3e7cde3de74a0cff&source=constructorLink"
+								class="footer-address footer-contact" title="Посмотреть на Яндекс карте">
+								<i class="fas fa-map-marker-alt"></i>
+								Тульская область, Ленинский район, с. Архангельское, ул. Центральная 1а
 							</a>
+							<div class="footer-email footer-contact">
+								<i class="far fa-envelope"></i>
+								<a href="mailto:info@stroytp.ru" class="email" title="Написать">
+									info@stroytp.ru
+								</a>
+							</div>
 						</div>
-						<div class="footer-tel footer-contact">
-							<a href="tel:+74872717098" class="phone" title="Позвонить">
-								<i class="fas fa-phone"></i>
-								+7 (4872) 71-70-98
-							</a>
-
-						</div>
-						<div class="footer-tel footer-contact">
-							<a href="tel:+79101671601" class="phone" title="Позвонить">
-								<i class="fas fa-phone"></i>
-								+7 (910) 167-16-01
-							</a>
+						<div class="box-flex">
+							<div class="footer-tel footer-contact">
+								<a href="tel:+74872717098" class="phone" title="Позвонить">
+									<i class="fas fa-phone"></i>
+									+7 (4872) 71-70-98
+								</a>
+							</div>
+							<div class="footer-tel footer-contact">
+								<a href="tel:+79101671601" class="phone" title="Позвонить">
+									<i class="fas fa-phone"></i>
+									+7 (910) 167-16-01
+								</a>
+							</div>
 						</div>
 						<div class="footer-btn">
 							<a href="#" class="btn">
@@ -1155,6 +1230,22 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-form">
+		<form class="cont-form__form">
+			<span class="form__title">
+				Закажите обратный звонок
+			</span>
+			<p class="form__subtitle">
+				Наш специалист свяжется с Вами
+			</p>
+			<input type="text" placeholder="Имя" required>
+			<input type="text" placeholder="Телефон" required>
+			<textarea name="text" placeholder="Комментарий к заявке"></textarea>
+			<button type="submit" class="form__btn btn">
+				Отправить заявку
+			</button>
+		</form>
+	</div>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
