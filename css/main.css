@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 15px;
+	overflow-x: hidden;
 }
 
 div,
@@ -2030,10 +2031,14 @@ table-specific_descr thead tr th:last-child {
 	.slick-next {
 		right: 10px !important;
 	}
+
+	.overlay-img {
+		width: 70% !important;
+	}
 }
 
 /*-- 600-768px col-sm --*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 	.nav-bar__email,
 	.nav-bar__phone {
@@ -2049,7 +2054,7 @@ table-specific_descr thead tr th:last-child {
 	}
 
 	.header-offer {
-		margin-bottom: 290px;
+		margin-bottom: 330px;
 	}
 
 	.header-form input {
