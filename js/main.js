@@ -160,7 +160,7 @@ function overlay(src, width) {
         document.body.style.overflow = 'auto';
     }
 }
-document.querySelectorAll('.nav-menu__btn').addEventListener('click', () => {
+document.querySelector('.nav-menu__btn').addEventListener('click', () => {
     let overlay = document.createElement('div');
     let modalForm = document.querySelector('.modal-form');
     modalForm.style.display = 'block';
