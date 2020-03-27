@@ -2445,4 +2445,22 @@ table-specific_descr thead tr th:last-child {
 		padding: 10px 15px;
 	}
 
+	::-webkit-scrollbar {
+		height: 9px;
+	}
+
+	/* ::-webkit-scrollbar-track {
+		background: rgba(0, 75, 137, 0.25);
+		border-radius: 5px;
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background: #004B89;
+		border-radius: 5px;
+		width: 44px;
+		height: 25px;
+		padding: 10px;
+	
+	} */
+
 }
