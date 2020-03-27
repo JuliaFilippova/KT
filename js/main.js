@@ -1,3 +1,31 @@
+// preloder 
+let preloader = document.querySelector('.preloader');
+let images = document.images;
+let imgTotalCount = images.length;
+let imgLoadCount = 0;
+document.body.style.overflow = 'hidden';
+for (let i = 0; i < imgTotalCount; i++) {
+    let imgClone = new Image();
+    imgClone.onload = imageLoaded;
+    imgClone.onerror = imageLoaded;
+    imgClone.src = images[i].src;
+}
+
+function imageLoaded() {
+    imgLoadCount++;
+    (((100 / imgTotalCount) * imgLoadCount) << 0) + '%';
+    setTimeout(function () {
+        if (imgLoadCount >= imgTotalCount) {
+            if (!preloader.classList.contains('done')) {
+                preloader.classList.add('done');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    }, 1000)
+}
+
+
+
 // section menu widget dropdown DROPDOWN
 $(document).ready(function () {
     $('.widget__list:nth-child(1)').addClass('fa_down'); //active one
