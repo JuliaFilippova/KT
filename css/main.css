@@ -1868,6 +1868,7 @@ table-specific_descr thead tr th:last-child {
 
 	.nav-bar__search {
 		padding: 15px 0;
+		overflow: hidden;
 	}
 
 	.nav-bar__search input {
@@ -2315,7 +2316,6 @@ table-specific_descr thead tr th:last-child {
 
 	.nav-bar__search {
 		width: 185px;
-		overflow: hidden;
 	}
 
 	.header-slider__item {
@@ -2449,19 +2449,5 @@ table-specific_descr thead tr th:last-child {
 	::-webkit-scrollbar {
 		height: 9px;
 	}
-
-	/* ::-webkit-scrollbar-track {
-		background: rgba(0, 75, 137, 0.25);
-		border-radius: 5px;
-	}
-	
-	::-webkit-scrollbar-thumb {
-		background: #004B89;
-		border-radius: 5px;
-		width: 44px;
-		height: 25px;
-		padding: 10px;
-	
-	} */
 
 }
