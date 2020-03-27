@@ -2315,6 +2315,7 @@ table-specific_descr thead tr th:last-child {
 
 	.nav-bar__search {
 		width: 185px;
+		overflow: hidden;
 	}
 
 	.header-slider__item {
