@@ -1,5 +1,7 @@
 // section menu widget dropdown DROPDOWN
 $(document).ready(function () {
+    $('.widget__list:nth-child(1)').addClass('fa_down'); //active one
+    $('.widget__list:nth-child(1) .fa-down').addClass('activ'); //active one
     $('.widget__link').click(function () {
         $('.widget__link').not(this).children('.fa-down').removeClass('activ');
         $(this).children('.fa-down').toggleClass("activ");
@@ -18,7 +20,8 @@ $(document).ready(function () {
 
 // section price-list widget dropdown DROPDOWN
 $(document).ready(function () {
-    $('.price-list__list:nth-child(1)').addClass('fa_down_two');
+    $('.price-list__list:nth-child(1)').addClass('fa_down_two'); //active one
+    $('.price-list__list:nth-child(1) .fa-down_two').addClass('activ'); //active one
     $('.price-list__name').click(function () {
         $('.price-list__name').not(this).children('.fa-down_two').removeClass('activ');
         $(this).children('.fa-down_two').toggleClass("activ");
@@ -45,8 +48,6 @@ let img1 = $(".gallery-img1").attr("src");
 let img2 = $(".gallery-img2").attr("src");
 let img3 = $(".gallery-img3").attr("src");
 let arr = [img1, img2, img3];
-
-
 
 // tabs product 
 function openCity(evt, tabName) {
@@ -83,58 +84,6 @@ window.onload = () => {
     }
 }
 
-$(document).ready(function () {
-    if ($('.slider-news').length != 0 || $('.slider-portfolio').length != 0) {
-        $('.slider-news').slick({
-            dots: false,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-
-        $('.slider-portfolio').slick({
-            dots: false,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: true,
-            responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    }
-});
-
 let certif = document.querySelectorAll('.wrap-img-overlay').forEach(item => item.onclick = cert);
 
 function cert() {
@@ -146,7 +95,7 @@ let sliderImg = document.querySelectorAll('.slider__slide').forEach(item => item
 
 function sliderImage() {
     let image = this.children[0].src;
-    overlay(image, 60);
+    overlay(image, 50);
 }
 
 function overlay(src, width) {
@@ -160,7 +109,11 @@ function overlay(src, width) {
         document.body.style.overflow = 'auto';
     }
 }
-document.querySelector('.nav-menu__btn').addEventListener('click', () => {
+
+// modal form btn
+document.querySelectorAll('.nav-menu__btn').forEach(item => item.onclick = btnForm)
+
+function btnForm() {
     let overlay = document.createElement('div');
     let modalForm = document.querySelector('.modal-form');
     modalForm.style.display = 'block';
@@ -172,8 +125,7 @@ document.querySelector('.nav-menu__btn').addEventListener('click', () => {
         modalForm.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
-});
-
+}
 
 
 // hamburger menu
