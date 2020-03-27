@@ -73,41 +73,6 @@ $(document).ready(function () {
     let img3 = $(".gallery-img3").attr("src");
     let arr = [img1, img2, img3];
 
-    // tabs product 
-    function openCity(evt, tabName) {
-        let i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    function openCountry(evt, tabName) {
-        let i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    window.onload = () => {
-        if (document.getElementById('tabDescr')) {
-            document.getElementById('tabDescr').style.display = 'block'
-        }
-    }
-
     let certif = document.querySelectorAll('.wrap-img-overlay').forEach(item => item.onclick = cert);
 
     function cert() {
@@ -151,7 +116,6 @@ $(document).ready(function () {
         }
     }
 
-
     // hamburger menu
     function burgerMenu(selector) {
         let menu = $(selector);
@@ -178,3 +142,37 @@ $(document).ready(function () {
     }
     burgerMenu('.burger-menu');
 });
+// tabs product 
+function openCity(evt, tabName) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function openCountry(evt, tabName) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+window.onload = () => {
+    if (document.getElementById('tabDescr')) {
+        document.getElementById('tabDescr').style.display = 'block'
+    }
+}
