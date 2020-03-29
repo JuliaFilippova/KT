@@ -100,7 +100,7 @@ $(document).ready(function () {
     }
 
     // modal form btn
-    document.querySelectorAll('.nav-menu__btn').forEach(item => item.onclick = btnForm)
+    document.querySelectorAll('.modal-btn').forEach(item => item.onclick = btnForm)
 
     function btnForm() {
         let overlay = document.createElement('div');
