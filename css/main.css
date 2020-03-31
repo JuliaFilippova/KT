@@ -1235,19 +1235,19 @@ textarea {
 	color: #004B89;
 }
 
-/* .cont-form__form input[type=checkbox]:disabled+label:before {
-	transform: scale(1);
-	border-color: #aaa;
-}
-
-.cont-form__form input[type=checkbox]:checked:disabled+label:before {
-	transform: scale(1);
-	background-color: #bfb;
-	border-color: #bfb;
-} */
 .header-form input[type=checkbox]+label {
 	color: #fff;
 }
+
+.header-form input[type=checkbox]+label a {
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+.header-form input[type=checkbox]+label a:hover {
+	border-bottom: 1px solid #fff;
+}
+
 
 .header-form input[type=checkbox]+label:before {
 	border: 1px solid #fff;
@@ -2398,7 +2398,6 @@ table-specific_descr thead tr th:last-child {
 	.certifications-item h3 {
 		min-height: 30px;
 	}
-
 
 	.certifications-item:nth-child(3n + 2) {
 		margin: 0;
