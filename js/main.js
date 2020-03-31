@@ -63,15 +63,15 @@ $(document).ready(function () {
     });
 
     // gallery product переключение картинок товара
-    // $(".gallery-content > div").on('click', 'img', function () {
-    //     let src = $(this).attr("src");
-    //     $(".gallery-main > img").attr("src", src);
-    // });
+    $(".gallery-content > div").on('click', 'img', function () {
+        let src = $(this).attr("src");
+        $(".gallery-main > img").attr("src", src);
+    });
 
-    // let img1 = $(".gallery-img1").attr("src");
-    // let img2 = $(".gallery-img2").attr("src");
-    // let img3 = $(".gallery-img3").attr("src");
-    // let arr = [img1, img2, img3];
+    let img1 = $(".gallery-img1").attr("src");
+    let img2 = $(".gallery-img2").attr("src");
+    let img3 = $(".gallery-img3").attr("src");
+    let arr = [img1, img2, img3];
 
     let certif = document.querySelectorAll('.wrap-img-overlay').forEach(item => item.onclick = cert);
 

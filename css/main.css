@@ -127,6 +127,64 @@ button:focus {
 	left: 0;
 }
 
+.breadcrumb {
+	background: transparent;
+	font-size: 12px;
+	padding: 0;
+	padding-top: 35px;
+}
+
+.breadcrumb li {
+	position: relative;
+	float: left;
+	padding-left: 30px;
+	padding-right: 10px;
+	text-decoration: none;
+	line-height: 26px;
+	color: black;
+	background: #f4f4f4;
+	transition: all 0.5s;
+}
+
+.breadcrumb li::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -10px;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	background: #f4f4f4;
+	box-shadow: 1px 1px 0 1px #ddd;
+	border-radius: 50px 0 0 0;
+	transform: rotate(-45deg) scale(0.73);
+	transition: all 0.5s;
+}
+
+.breadcrumb li:last-child {
+	background: transparent;
+}
+
+.breadcrumb .active:after {
+	background: transparent;
+	box-shadow: none;
+}
+
+.breadcrumb .active::after {
+	background: transparent;
+	box-shadow: none;
+}
+
+.breadcrumb li:hover,
+.breadcrumb li:hover::after {
+	background: #f1c40f;
+}
+
+.breadcrumb .active:hover,
+.breadcrumb .active:hover::after {
+	background: transparent;
+}
+
 /*-- header --*/
 .menu-mobile {
 	display: none;
@@ -1001,7 +1059,7 @@ button:focus {
 
 /*-- PAGE page-product --*/
 .page {
-	padding: 70px 0 15px;
+	padding: 30px 0 15px;
 }
 
 .product-features {
@@ -1267,6 +1325,14 @@ textarea {
 	max-width: 122px;
 	height: 88px;
 	object-fit: cover;
+	border: 2px solid transparent;
+}
+
+.gallery-content div img:hover {
+	border: 2px solid #004B89;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px rgba(0, 75, 137, 0.3);
+	cursor: pointer;
 }
 
 .product-features__btn-price_page-specific {
@@ -2281,7 +2347,11 @@ table-specific_descr thead tr th:last-child {
 	}
 
 	.page {
-		padding: 30px 0 15px;
+		padding: 25px 0 15px;
+	}
+
+	.breadcrumb {
+		padding-top: 15px;
 	}
 
 	/* SERVICES */
