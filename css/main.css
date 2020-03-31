@@ -2347,12 +2347,18 @@ table-specific_descr thead tr th:last-child {
 	}
 
 	.page {
-		padding: 25px 0 15px;
+		padding: 0 0 15px;
 	}
 
-	.breadcrumb {
-		padding-top: 15px;
+	.breadcrumb li,
+	.breadcrumb li a {
+		font-size: 10px;
 	}
+
+	.breadcrumb li {
+		padding-left: 20px;
+	}
+
 
 	/* SERVICES */
 
